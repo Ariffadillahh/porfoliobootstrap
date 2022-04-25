@@ -1,0 +1,361 @@
+* {
+ padding: 0;
+ margin: 0;
+ font-family: sans-serif;
+
+}
+
+header {
+ 	height: 70px;
+ 	background-color: #fef9ff;
+
+ 	}
+header h1 {
+	display: inline-block;
+	float: left;
+	padding: 20px;
+
+}
+
+header h1 a{
+	transition: .2s;
+}
+header h1 a:hover{
+	color:#E6D5F9;
+}
+header ul{
+	
+	float: right;
+}
+
+header ul li {
+	padding: 25px;
+	display: inline-block;
+
+}
+header ul li a:hover{
+	color: #E6D5F9;
+	transition: .2s;
+}
+
+a {
+	text-decoration: none;
+	color: #79787B;
+}
+
+
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #fef9ff;
+}
+
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.mobile-menu {
+	float: right;
+	display: none;
+	padding:18px;
+	color: #79787B;
+}
+.mobile-menu :hover{
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width:300px;
+	background-color: rgba(204, 157, 253, .6);
+	transition: .5s;
+	z-index: 9999;
+
+}
+.sidebar ul li  {
+	padding: 25px;
+}
+.sidebar ul li a{
+	color: #fff;
+}
+.sidebar ul :hover {
+	background-color:#E6D5F9;
+	transition: .3s;
+}
+#check:checked ~.sidebar{
+	left: 0;
+	
+}
+
+
+#jumbotron {
+	text-align: center;
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+	background-color: #fef9ff;
+}
+#jumbotron img {
+	border-radius: 25px;
+	margin-left: 15rem;
+	border: 3px solid #A14BFC ;
+	
+}
+.nama {
+	margin-right: 25rem;
+	margin-top: -10rem;
+	left: 19rem;
+	font-family: 'Handlee', cursive;
+	margin-bottom: 20px;
+	color: #79787B;
+}
+.lead {
+	margin-top:-2rem;
+	margin-right: 10rem;
+	margin-bottom: 1rem;
+	font-family: 'Handlee', cursive;
+	margin-bottom: 10px;
+	color: #79787B;
+}
+
+.tombol {
+	
+	margin-right: 7rem;
+	border-radius: 30px;
+	padding: 10px;
+	background-color: #A14BFC;
+	border: 1px solid;
+}
+
+.tombol a {
+	color: #fff;
+	font-family:'Handlee', cursive;
+}
+ {
+ 	margin :10px;
+ }
+#jumbotron h1 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#Abaot {
+	text-align:  center;
+	background-color: #fef9ff;
+	padding: 5rem;
+
+}
+#Abaot h3 {
+	padding: 20px;
+}
+
+#Abaot p {
+ text-align: center;
+ word-spacing: 2px;
+ line-height: 25px;
+}
+
+#prestasi{
+	background-color: #fef9ff;
+	text-align: center;
+	padding-bottom: 5rem;
+}
+
+#prestasi h3{
+	padding-bottom: 30px;
+	padding-top: 3rem;
+}
+}
+#prestasi .col-4 {
+	width: 	32%;
+	display: 	inline-block;
+	padding:0 5px;
+	margin-bottom: 5rem;
+}
+#prestasi .col-4 .img {
+	text-align: center;
+}
+
+#prestasi .col-4 h4 {
+	padding:20px ;
+	text-align: center;
+
+}
+
+#service {
+	padding-bottom: 10rem;
+	background-color: #fef9ff;
+}
+
+#service h3{
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .col-4 {
+	width:25%;
+	padding:20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.icon {
+	width:70px;
+	height:70px;
+	border:1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	margin:0 auto;
+}
+.box .col-4 h4 {
+	margin:20px 0;
+
+
+}
+
+
+.footer .sosial {
+ text-align: center;
+ padding-bottom: 25px;
+ padding-top: 25px;
+}
+
+.footer .sosial :hover{
+	color: #fff;
+	transition: .3s; 
+
+}
+
+.footer .sosial a{
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	display: inline-block;
+	text-align: center;
+
+}
+.footer ul {
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	line-height: 1.6;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.footer ul li{
+	margin: 10px;
+	display: inline-block;
+}
+
+.list li a:hover {
+	color: #fff;
+}
+
+.footer h4 {
+	text-align: center;
+	margin-bottom: 5px;
+	font-family: sans-serif;
+}
+
+.footer p{
+	text-align: center;
+}
+
+.footer {
+	
+	padding-bottom: 3rem;
+	background-color: #efefef;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+ @media (max-width: 768px)
+{
+	.mobile-menu {
+		display: block;
+
+	}
+	.sidebar {
+		cursor: pointer;
+	}
+	header ul {
+		display: none;
+	}
+
+	#jumbotron{
+		text-align: center;
+		background-color:
+		padding-bottom:5rem;
+	}
+    
+    #jumbotron img {
+    margin: 20px -4.5rem;
+	font-size: 20px;
+	text-align: center;
+	
+    	
+    }
+    #jumbotron .nama {
+    	 margin: 0 -10rem;
+	     padding: 0;
+	     float: block;
+	     font-size: 20px;
+    	}
+
+     #jumbotron	.lead {
+     	 margin: 0 -10rem;
+	     padding: 19rem -70rem;
+
+     }
+
+     #jumbotron .tombol {
+     	 margin: 10px -13rem;
+	     padding: 10rem -70rem;
+	     cursor: pointer;
+
+     }
+     	#Abaot h3{
+     		padding-top: 3rem;
+     	}
+     	#Abaot p {
+     		padding-bottom: 3rem;
+     	}
+
+   		#prestasi .col-4{
+   			background-color: 
+   		}
+      .box .col-4 {
+       	width: 100%
+       }
+
+       #prestasi .col-4 h4 {
+       	margin:0;
+       	font-size:20px;
+       }
+       
+
+       
+     
+
+  
+
+   	
+}
+
